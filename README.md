@@ -1,40 +1,20 @@
-ADSG-LBaaS-Driver Overview
+Overview
 =====
-This is the OpenStack LBaaS(Load Balancer as a Service) driver for SEnginx. It can provide basic load balancing service for OpenStack instances.
+ADSG supports Load Balancer as a Service (LBaaS) on OpenStack (Havana version or later).
+ADSG LBaaS driver is implemented based on OpenStack haproxy’s driver and thus it can
+provide basic load balancing service for OpenStack server instances.
+This guide employs three typical load balancing scenarios of ADSG. It describe how to integrate
+ADSG LBaaS driver as an OpenStack component, and how to configure ADSG load balancer on
+OpenStack to provide loading balancing as a service for clients.
+For information about how to install and configure ADSG, see Neusoft NetEye Application
+Delivery Security Gateway Quick Start Guide.
 
-This driver is implemented based on OpenStack's haproxy driver in Havana version. The latest version of haproxy driver in OpenStack has been changed to support multi-vendor
-
-ADSG github repos:
-(https://github.com/NeusoftSecurity/ADSG-LBaaS-Driver) - OpenStack LBaaS driver,
-
-
-Installation info:
-
-To use this driver, you must:
-- Install the adsg-neutron-lbaas module.
-- Create a driver config file, a sample of which is given below.
-- Enable it in neutron.conf
-- Restart neutron-server
-
-
-Configuration file:
-
-Create a configuration file with a list of ADSG appliances, similar to the
-file below, located at:
- /etc/neutron/services/loadbalancer/Neusoft_ADSG/config.py
-
-
-Example config file:
-
-devices = {
-    "adsg1": {
-        "username":"admin",
-        "host": "190.168.30.8",
-        "port": 10000,
-        "protocol": "https",
-        "password": "neteye",
-        "localip" :"192.168.30.9"
-        "use_float": False,
-        "method": "hash"
-           }
-    }
+Load Balancing Scenarios and Configurations
+ =====
+Both physical and virtual ADSG devices can be deployed in OpenStack environment. Typical
+deployment scenarios include:
+ 2.1. VLAN Mode. Physical ADSG is deployed in OpenStack private cloud environment,
+and provide load balancing service for back-end servers through Layer 2 VLAN.
+ 2.2. DSNAT Mode. Virtual ADSG is launched in an internal network of OpenStack, and
+provide load balancing service for back-end servers through Neutron router.
+ 2.2. Proxy Mode. Physical ADSG is deployed in the external network of OpenStack,
