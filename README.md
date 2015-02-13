@@ -1,6 +1,8 @@
-# ADSG-LBaaS-Driver
+ADSG-LBaaS-Driver Overview
+=====
+This is the OpenStack LBaaS(Load Balancer as a Service) driver for SEnginx. It can provide basic load balancing service for OpenStack instances.
 
-ADSG Networks LBaaS Driver
+This driver is implemented based on OpenStack's haproxy driver in Havana version. The latest version of haproxy driver in OpenStack has been changed to support multi-vendor
 
 ADSG github repos:
 (https://github.com/NeusoftSecurity/ADSG-LBaaS-Driver) - OpenStack LBaaS driver,
