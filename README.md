@@ -10,7 +10,7 @@ For information about how to install and configure ADSG, see Neusoft NetEye Appl
 Delivery Security Gateway Quick Start Guide.
 
 Load Balancing Scenarios and Configurations
- =====
+=====
 Both physical and virtual ADSG devices can be deployed in OpenStack environment. Typical
 deployment scenarios include:
  2.1. VLAN Mode. Physical ADSG is deployed in OpenStack private cloud environment,
