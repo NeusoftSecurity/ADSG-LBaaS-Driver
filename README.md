@@ -13,9 +13,9 @@ Delivery Security Gateway Quick Start Guide.
 #Load Balancing Scenarios and Configurations
 
 Both physical and virtual ADSG devices can be deployed in OpenStack environment. Typical
-deployment scenarios include:
+deployment scenarios include:<br>
 2.1. VLAN Mode. Physical ADSG is deployed in OpenStack private cloud environment,
-and provide load balancing service for back-end servers through Layer 2 VLAN.
+and provide load balancing service for back-end servers through Layer 2 VLAN.<br>
 2.2. DSNAT Mode. Virtual ADSG is launched in an internal network of OpenStack, and
-provide load balancing service for back-end servers through Neutron router.
-2.2. Proxy Mode. Physical ADSG is deployed in the external network of OpenStack,
+provide load balancing service for back-end servers through Neutron router.<br>
+2.3. Proxy Mode. Physical ADSG is deployed in the external network of OpenStack.<br>
