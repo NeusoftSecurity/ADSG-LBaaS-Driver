@@ -27,14 +27,13 @@ provide load balancing service for back-end servers through Neutron router.<br>
 ![github](https://github.com/liuxinneu/images/blob/master/agent.PNG)
 <br>
 
-#Install ADSG LBaaS Driver<
+#Install ADSG LBaaS Driver
 
-1. Download the NEUSOFT_ADSG driver and install it on to “..neutron/neutron/
-services/loadbalancer/drivers/NEUSOFT_ADSG” directory.<br>
-2. Modify the configuration file “/etc/neutron/neutron.conf”.<br>
- Comment out the original haproxy settings.<br>
- Add information about ADSG:<br>
-service_provider =LOADBALANCER:Neusoft_ADSG:neutron.services.loadbalancer.drivers.Neusoft_ADSG.adsg.AdsgDriver:default<br>
+1. Download the NEUSOFT_ADSG driver and install it on to “..neutron/neutron/services/loadbalancer/drivers/NEUSOFT_ADSG” directory. <br>
+2. Modify the configuration file “/etc/neutron/neutron.conf”. <br>
+  Comment out the original haproxy settings.<br>
+  Add information about ADSG:<br>
+service_provider = LOADBALANCER:Neusoft_ADSG:neutron.services.loadbalancer.drivers.Neusoft_ADSG.adsg.AdsgDriver:default <br>
 3. Enter service neutron-server restart to restart Neutron services.<br>
 4. Configure ADSG LBaaS driver. Create a directory “mkdir -p /etc/neutron/services/loadbalancer/Neusoft_ADSG” and a configuration file config.py, and set as follows:<br>
 devices = { <br>
@@ -50,9 +49,9 @@ devices = { <br>
          } <br>
           } <br>
 This table describes the detailed information of parameters above:<br>
+------------- | -------------
 Parameters | Description
-  ------------- | -------------
- username | Northbound interface name.
+username | Northbound interface name.
 password | Northbound interface password.
 host | Northbound interface IP address, used to communicate with the node where the OpenStack LBaaS driver is installed.
 port | Number of the protocol used by the northbound interface.
