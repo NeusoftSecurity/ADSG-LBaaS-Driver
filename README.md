@@ -16,14 +16,17 @@ Both physical and virtual ADSG devices can be deployed in OpenStack environment.
 deployment scenarios include:<br>
 2.1. VLAN Mode. Physical ADSG is deployed in OpenStack private cloud environment,
 and provide load balancing service for back-end servers through Layer 2 VLAN.<br>
-[image]: https://github.com/liuxinneu/images/blob/master/vlan.PNG
+[![image]](https://github.com/liuxinneu/images/blob/master/VLAN.PNG)  
+
 <br>
 
 2.2. DSNAT Mode. Virtual ADSG is launched in an internal network of OpenStack, and
 provide load balancing service for back-end servers through Neutron router.<br>
-[image]:https://github.com/liuxinneu/images/blob/master/DSNAT.PNG
+[![image]](https://github.com/liuxinneu/images/blob/master/DSNAT.PNG)
+
 <br>
 
 2.3. Proxy Mode. Physical ADSG is deployed in the external network of OpenStack.<br>
-[image]:https://github.com/liuxinneu/images/blob/master/agent.PNG
+[![image]](https://github.com/liuxinneu/images/blob/master/agent.PNG)
+
 <br>
