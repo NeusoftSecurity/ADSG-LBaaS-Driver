@@ -50,13 +50,13 @@ devices = { <br>
           } <br>
 This table describes the detailed information of parameters above:<br>
 
-**username\: ** Northbound interface name.<br>
-**password\: ** Northbound interface password.<br>
-**host\: ** Northbound interface IP address, used to communicate with the node where the OpenStack LBaaS driver is installed.<br>
-**port\: **Number of the protocol used by the northbound interface.<br>
-**protocol\: ** Protocol used by the northbound interface.<br>
-**localip\: ** The IP address of one ADSG interface, used to communicate with back-end servers. It must be in the same IP segment as the pool subnet, otherwise, you cannot create a VIP. Multiple IPs are supported and they are separated by commas without spaces. The IP is configured for Layer 4 load balancing only and you can supply a null value for it when using Layer 7 load balancing.<br> 
-**use_float\: ** Includes True and False.<br> 
+**username** :  Northbound interface name.<br>
+**password** :  Northbound interface password.<br>
+**host** :  Northbound interface IP address, used to communicate with the node where the OpenStack LBaaS driver is installed.<br>
+**port** : Number of the protocol used by the northbound interface.<br>
+**protocol**  : Protocol used by the northbound interface.<br>
+**localip** :  The IP address of one ADSG interface, used to communicate with back-end servers. It must be in the same IP segment as the pool subnet, otherwise, you cannot create a VIP. Multiple IPs are supported and they are separated by commas without spaces. The IP is configured for Layer 4 load balancing only and you can supply a null value for it when using Layer 7 load balancing.<br> 
+**use_float** : Includes True and False.<br> 
     • True—indicates that floating IPs must be set for back-end servers on OpenStack, so that the servers can access external       networks. <br> 
     • False—indicates that there is no need to assign floating IPs to back-endservers. You are recommended to set use_float        to False in VLAN mode.<br> 
-**method\: **If there are multiple ADSG devices, the algorithm can help tenants to choose the optimal ADSG device.
+**method** : If there are multiple ADSG devices, the algorithm can help tenants to choose the optimal ADSG device.
