@@ -1,6 +1,6 @@
 #Overview
 
-[plain]
+
 ADSG supports Load Balancer as a Service (LBaaS) on OpenStack (Havana version or later).
 ADSG LBaaS driver is implemented based on OpenStack haproxy’s driver and thus it can
 provide basic load balancing service for OpenStack server instances.
