@@ -25,4 +25,15 @@ provide load balancing service for back-end servers through Neutron router.<br>
 
 2.3. Proxy Mode. Physical ADSG is deployed in the external network of OpenStack.<br>
 ![github](https://github.com/liuxinneu/images/blob/master/agent.PNG)
+<br>
+Install ADSG LBaaS Driver
+1. Download the NEUSOFT_ADSG driver and install it on to “..neutron/neutron/
+services/loadbalancer/drivers/NEUSOFT_ADSG” directory.
+2. Modify the configuration file “/etc/neutron/neutron.conf”.
+ Comment out the original haproxy settings.
+ Add information about ADSG:
+service_provider =
+LOADBALANCER:Neusoft_ADSG:neutron.services.loadbalancer.drivers.Neu
+soft_ADSG.adsg.AdsgDriver:default
+3. Enter service neutron-server restart to restart Neutron services.
 
