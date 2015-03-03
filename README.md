@@ -8,7 +8,7 @@ This guide employs three typical load balancing scenarios of ADSG. It describe h
 ADSG LBaaS driver as an OpenStack component, and how to configure ADSG load balancer on
 OpenStack to provide loading balancing as a service for clients.
 For information about how to install and configure ADSG, see [Neusoft NetEye Application
-Delivery](http://security.neusoft.com/index.php)Security Gateway Quick Start Guide.
+Delivery](http://security.neusoft.com/index.php) and [Security Gateway Quick Start Guide](http://security.neusoft.com/index.php/support/download/viewcategory/8-next-generation-adc-doc).
 
 #Load Balancing Scenarios 
 
